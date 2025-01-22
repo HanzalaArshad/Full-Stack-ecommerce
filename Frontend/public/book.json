@@ -1,0 +1,202 @@
+[
+  {
+    "_id": 1,
+    "title": "The Sealed Nectar",
+    "description": "A detailed biography of Prophet Muhammad (PBUH), providing insights into his life and teachings.",
+    "category": "Islam",
+    "trending": true,
+    "coverImage": "book1.png",
+    "oldPrice": 29.99,
+    "newPrice": 19.99
+  },
+  {
+    "_id": 2,
+    "title": "The Revival of Religious Sciences",
+    "description": "Imam Al-Ghazali’s profound work exploring Islamic philosophy and spirituality.",
+    "category": "Philosophy",
+    "trending": true,
+    "coverImage": "book2.png",
+    "oldPrice": 34.99,
+    "newPrice": 24.99
+  },
+  {
+    "_id": 3,
+    "title": "Atomic Habits",
+    "description": "A self-help guide to building good habits and breaking bad ones by James Clear.",
+    "category": "Self-Help",
+    "trending": true,
+    "coverImage": "book3.png",
+    "oldPrice": 24.99,
+    "newPrice": 14.99
+  },
+  {
+    "_id": 4,
+    "title": "A Brief History of Time",
+    "description": "Stephen Hawking’s iconic book exploring the origins and structure of the universe.",
+    "category": "Science",
+    "trending": false,
+    "coverImage": "book4.png",
+    "oldPrice": 39.99,
+    "newPrice": 29.99
+  },
+  {
+    "_id": 5,
+    "title": "Andheri Raat Ke Musafir",
+    "description": "A gripping novel by Naseem Hijazi, highlighting the historical struggles during Islamic rule.",
+    "category": "Novels",
+    "trending": true,
+    "coverImage": "book5.png",
+    "oldPrice": 19.99,
+    "newPrice": 9.99
+  },
+  {
+    "_id": 6,
+    "title": "Forty Hadith Qudsi",
+    "description": "A collection of sacred narrations attributed directly to Allah.",
+    "category": "Islam",
+    "trending": true,
+    "coverImage": "book6.png",
+    "oldPrice": 24.99,
+    "newPrice": 14.99
+  },
+  {
+    "_id": 7,
+    "title": "The Philosophy of Mulla Sadra",
+    "description": "A comprehensive exploration of the ideas of the renowned Persian philosopher.",
+    "category": "Philosophy",
+    "trending": false,
+    "coverImage": "book7.png",
+    "oldPrice": 44.99,
+    "newPrice": 34.99
+  },
+  {
+    "_id": 8,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "description": "Mark Manson’s raw and honest guide to living a meaningful life.",
+    "category": "Self-Help",
+    "trending": true,
+    "coverImage": "book8.png",
+    "oldPrice": 29.99,
+    "newPrice": 19.99
+  },
+  {
+    "_id": 9,
+    "title": "Sapiens: A Brief History of Humankind",
+    "description": "Yuval Noah Harari explores the history of human evolution and civilization.",
+    "category": "Science",
+    "trending": true,
+    "coverImage": "book9.png",
+    "oldPrice": 39.99,
+    "newPrice": 24.99
+  },
+  {
+    "_id": 10,
+    "title": "Moazzam Ali",
+    "description": "An epic historical novel by Naseem Hijazi, narrating the rise of Tipu Sultan.",
+    "category": "Novels",
+    "trending": false,
+    "coverImage": "book10.png",
+    "oldPrice": 29.99,
+    "newPrice": 19.99
+  },
+  {
+    "_id": 11,
+    "title": "Tafsir Ibn Kathir",
+    "description": "A classical exegesis of the Quran offering a deep understanding of its verses.",
+    "category": "Islam",
+    "trending": true,
+    "coverImage": "book11.png",
+    "oldPrice": 49.99,
+    "newPrice": 39.99
+  },
+  {
+    "_id": 12,
+    "title": "The Republic",
+    "description": "Plato’s seminal work on justice, society, and the ideal state.",
+    "category": "Philosophy",
+    "trending": false,
+    "coverImage": "book12.png",
+    "oldPrice": 24.99,
+    "newPrice": 14.99
+  },
+  {
+    "_id": 13,
+    "title": "Think and Grow Rich",
+    "description": "Napoleon Hill’s timeless principles for financial and personal success.",
+    "category": "Self-Help",
+    "trending": true,
+    "coverImage": "book13.png",
+    "oldPrice": 19.99,
+    "newPrice": 9.99
+  },
+  {
+    "_id": 14,
+    "title": "The Gene: An Intimate History",
+    "description": "Siddhartha Mukherjee’s deep dive into the history and science of genetics.",
+    "category": "Science",
+    "trending": false,
+    "coverImage": "book14.png",
+    "oldPrice": 34.99,
+    "newPrice": 24.99
+  },
+  {
+    "_id": 15,
+    "title": "Shaheen",
+    "description": "Another historical masterpiece by Naseem Hijazi about the Muslim conquest of Spain.",
+    "category": "Novels",
+    "trending": true,
+    "coverImage": "book15.png",
+    "oldPrice": 19.99,
+    "newPrice": 9.99
+  },
+  {
+    "_id": 16,
+    "title": "Riyad-us-Saliheen",
+    "description": "A collection of authentic hadiths compiled by Imam An-Nawawi.",
+    "category": "Islam",
+    "trending": false,
+    "coverImage": "book16.png",
+    "oldPrice": 39.99,
+    "newPrice": 29.99
+  },
+  {
+    "_id": 17,
+    "title": "Critique of Pure Reason",
+    "description": "Immanuel Kant’s pivotal work on metaphysics and epistemology.",
+    "category": "Philosophy",
+    "trending": true,
+    "coverImage": "book17.png",
+    "oldPrice": 44.99,
+    "newPrice": 34.99
+  },
+  {
+    "_id": 18,
+    "title": "The Power of Now",
+    "description": "Eckhart Tolle’s guide to spiritual enlightenment and living in the present.",
+    "category": "Self-Help",
+    "trending": true,
+    "coverImage": "book18.png",
+    "oldPrice": 24.99,
+    "newPrice": 14.99
+  },
+  {
+    "_id": 19,
+    "title": "The Selfish Gene",
+    "description": "Richard Dawkins’s groundbreaking book on evolution and the role of genes.",
+    "category": "Science",
+    "trending": true,
+    "coverImage": "book19.png",
+    "oldPrice": 29.99,
+    "newPrice": 19.99
+  },
+  {
+    "_id": 20,
+    "title": "Aur Talwar Toot Gai",
+    "description": "Naseem Hijazi’s compelling novel about the fall of Baghdad.",
+    "category": "Novels",
+    "trending": false,
+    "coverImage": "book20.png",
+    "oldPrice": 19.99,
+    "newPrice": 9.99
+  }
+]
