@@ -5,14 +5,17 @@ const LINKS = [
   {
     title: "Product",
     items: ["Books", "Novels", "Religious Book", "Science"],
+    link: ['/explore-books'],
   },
   {
     title: "Company",
     items: ["About us", "Careers", "Press", "News"],
+    link: ['/about'],
   },
   {
     title: "Resource",
     items: ["Blog", "Newsletter", "Events", "Help center"],
+    link: ['/blog'],
   },
 ];
 
@@ -23,11 +26,11 @@ const Footer = () => {
     <footer className="relative w-full bg-black p-8">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <h1  className="mb-6 text-4xl font-bold  text-white">
+          <h1 className="mb-6 text-4xl font-bold text-white">
             BookNest
           </h1>
-          <div className="grid grid-cols-3 justify-between gap-4">
-            {LINKS.map(({ title, items }) => (
+          <div className="grid grid-cols-3 mb-4 justify-between gap-4">
+            {LINKS.map(({ title, items, link }) => (
               <ul key={title}>
                 <Typography
                   variant="small"
@@ -35,15 +38,14 @@ const Footer = () => {
                 >
                   {title}
                 </Typography>
-                {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
+                {items.map((item, index) => (
+                  <li key={item}>
+                    <NavLink
+                      to={link[index]} // Linking to the corresponding path from the `link` array
                       className="py-1.5 font-normal text-white transition-colors hover:opacity-80"
                     >
-                      {link}
-                    </Typography>
+                      {item}
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -55,11 +57,11 @@ const Footer = () => {
             variant="small"
             className="mb-4 text-center font-normal text-white md:mb-0"
           >
-            &copy; {currentYear} <NavLink to="/" className="underline">Book Store</NavLink>. All
-            Rights Reserved.
+            &copy; {currentYear} <NavLink to="/" className="underline">Book Store</NavLink>. All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-white sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+              {/* Social media icons */}
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -69,6 +71,7 @@ const Footer = () => {
               </svg>
             </Typography>
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+              {/* Another social media icon */}
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"

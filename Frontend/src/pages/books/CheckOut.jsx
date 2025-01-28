@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import { useCreateOrderMutation } from "../../redux/features/order/ordersApi";
 
 const CheckOut = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -10,14 +12,19 @@ const CheckOut = () => {
     .reduce((acc, item) => acc + item.newPrice, 0)
     .toFixed(2);
 
+    const navigate=useNavigate()
+
+    const [createOrder,{isLoading,error}]=useCreateOrderMutation();
+
+    const {currentUser}=useAuth();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async(data) => {
     const newOrder = {
       name: data.name,
       email: currentUser?.email,
@@ -32,10 +39,21 @@ const CheckOut = () => {
       totalPrice: totalPrice,
     };
 
-    console.log(newOrder);
+
+    try {
+      await createOrder(newOrder).unwrap()
+      alert("order done Successfully  ")
+      navigate("/orders")
+    } catch (error) {
+      console.error("failed in placing order");
+      alert("failed to proceed checkout")
+    }
+
+
   };
 
-  const currentUser = true;
+  
+  if(isLoading) return <h1>Loading ....</h1>
 
   return (
     <section className=" bg-white min-h-screen flex items-center justify-center   rounded-lg py-12">

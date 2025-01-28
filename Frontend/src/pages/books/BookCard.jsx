@@ -4,6 +4,7 @@ import getImgUrl from "../../utils/getImgUrl";
 import { use } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/features/cart/cartSlice";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ book }) => {
 
@@ -15,15 +16,16 @@ const BookCard = ({ book }) => {
   }
   
   return (
-    <div className="w-full max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+    <div className="w-full   max-w-xs bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105">
       {/* Increased height of the image container */}
-      <div className="relative h-100 w-full bg-gray-200 flex items-center justify-center">
-        <img
+      <Link to={`/books/${book._id}`} className="relative h-100 w-full bg-gray-200 flex items-center justify-center sm:flex-row sm:justify-between ">
+        <img 
+           
           src={`${getImgUrl(book.coverImage)}`}
           alt={book.title || "Book Cover"}
-          className="h-full w-full object-fit"
+          className="h-[300px] object-fit"
         />
-      </div>
+      </Link>
       <div className="p-4">
         <h3 className="text-lg font-bold text-gray-800 mb-2 truncate">
           {book.title || "Book Title"}
@@ -37,7 +39,7 @@ const BookCard = ({ book }) => {
             ${book.oldPrice || book.price + 20}
           </span>
         </p>
-        <button onClick={()=> handleAddToCart(book)} className="w-full py-2 px-4 bg-blue-600 text-white rounded-md flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
+        <button onClick={()=> handleAddToCart(book)} className="w-full py-2 px-4 bg-[#16186b] text-white rounded-md flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
           <FiShoppingCart />
           <span>Add to Cart</span>
         </button>

@@ -36,13 +36,34 @@
     @apply bg-primary  px-12 py-2 rounded-md text-base font-secondary font-bold hover:bg-secondary hover:text-white transition-all duration-200 cursor-pointer
  }
 
-.html{
-   scroll-behavior: smooth;
-}
+
 
 .swiper-pagination{
      position: absolute;
      margin-top: 20px;
 }
  
-    
+ 
+html {
+   scroll-behavior: smooth;
+}
+
+
+/* For modern browsers */
+::-webkit-scrollbar {
+   width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+   background: #b2a8d4eb; 
+   border-radius: 10px; /* Smooth rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: linear-gradient(45deg, #8505fd, #3603ee, #ff7eb3); /* Subtle change on hover */
+}
+
+::-webkit-scrollbar-track {
+   background: #f4f4f4; /* Background of the scrollbar track */
+   border-radius: 10px;
+}

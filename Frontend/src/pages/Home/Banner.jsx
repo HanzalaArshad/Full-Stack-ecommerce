@@ -1,5 +1,6 @@
 import React from 'react'
 import banner from "../../assets/banner1.png.png"
+import { NavLink } from 'react-router-dom'
 
 const Banner = () => {
   return (
@@ -14,7 +15,7 @@ const Banner = () => {
         <p className='mb-10'>Welcome to your one-stop destination for all things books! Whether you're a lover of thrilling mysteries, timeless romance, gripping fantasies, or enriching non-fiction, we have something for everyone. Explore our curated collections, discover hidden gems, and let every book take you on a journey of imagination and discovery.
 
 </p>
-     <button  className='btn-primary text-white'>Subscribe</button>
+<NavLink to="/about">  <button  className='btn-primary text-white'>About Us </button> </NavLink>
       </div>
       
     </div>

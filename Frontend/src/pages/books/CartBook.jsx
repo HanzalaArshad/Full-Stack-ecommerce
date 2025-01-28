@@ -10,7 +10,6 @@ const CartBook = () => {
 
   const cartItems=useSelector(state=>state.cart.cartItem)
   
-  console.log(cartItems);
 
   
   

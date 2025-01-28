@@ -1,20 +1,39 @@
 import React, { useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
   const [message, setMessage] = useState('');
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const {login,signInwithGoogle}=useAuth()
+  const navigate=useNavigate()
 
-  const onSubmit = (data) => {
-    console.log(data);
-    // Implement your login logic here
+  const onSubmit = async(data) => {
+     try {
+      await login(data.email.trim(),data.password);
+      setMessage("")  
+      navigate("/")
+       
+     } catch (error) {
+       console.error(error);
+       setMessage("You are Entering Wrong Credentials")
+     }
   };
 
-  const handleGoogleSignIn = () => {
-    // Implement Google Sign-In logic using react-google-login or Firebase
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInwithGoogle();
+      alert("Login successful");
+      navigate('/');
+
+    } catch (error) {
+      console.error(error);
+      alert("Google Sign-In failed. Please try again.");
+    }
   };
+
 
   return (
     <div className='h-[calc(100vh-120px)] flex justify-center items-center'>
