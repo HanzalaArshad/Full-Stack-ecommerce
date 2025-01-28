@@ -75,8 +75,15 @@ A full-stack MERN application for managing an online book store. This project fe
 
 ## 📸 Screenshots  
 | **Admin Dashboard** | **Books Page** |  
-|----------------------|----------------|  
-| ![Admin Dashboard](https://via.placeholder.com/300) | ![Books Page](https://via.placeholder.com/300) |  
+![Image](https://github.com/user-attachments/assets/3159c705-63ad-40b5-8d82-70272cf37c5d)
+![Image](https://github.com/user-attachments/assets/23b72872-aec9-4d31-ac1d-e451e13ae162)
+![Image](https://github.com/user-attachments/assets/83c1efc8-16b2-47bb-aab6-e99cc418f251)
+![Image](https://github.com/user-attachments/assets/466216a0-e3c7-4e69-b65c-ba62eb25d1e5)
+![Image](https://github.com/user-attachments/assets/0d6cfa4c-574d-4f8f-9ed2-88c8aee62402)
+![Image](https://github.com/user-attachments/assets/c2ecbfb1-54b4-4af7-99a8-653ccc329ab3)
+![Image](https://github.com/user-attachments/assets/8f20d146-4aec-4863-a88e-d64d0b12285a)
+![Image](https://github.com/user-attachments/assets/1e5e8609-bd53-42fa-9d81-85d9d68549f1)
+![Image](https://github.com/user-attachments/assets/204128fc-9720-4595-aff9-9d0d9fa4012f)| ![Admin Dashboard](https://via.placeholder.com/300) | ![Books Page](https://via.placeholder.com/300) |  
 
 ## 🌟 Live Demo  
 Check out the live project here: [Live Demo](https://booknest-bibliophile.vercel.app/)  
